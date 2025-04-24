@@ -1,0 +1,419 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.formSection {
+  flex: 0.5;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  margin-top: -1rem;
+}
+
+.logo span {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #001538;
+}
+
+.logo span:first-child {
+  margin-right: 0.5rem;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.title {
+  color: #6076FF;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  align-self: flex-start;
+  letter-spacing: -0.02em;
+  margin-left: 9.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.inputGroup label {
+  color: #001538;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.inputGroup input {
+  padding: 0.875rem 1rem;
+  border: 1.5px solid #001538;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s;
+  background-color: #fff;
+  color: #001538;
+  height: 46px;
+}
+
+.inputGroup input::placeholder {
+  color: #64748B;
+}
+
+.inputGroup input:focus {
+  border-color: #001538;
+  box-shadow: 0 0 0 3px rgba(0, 21, 56, 0.1);
+}
+
+.emailInput {
+  padding-right: 2.5rem !important;
+  background-image: url('/images/sms.png');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0.6;
+}
+
+.emailInput:hover {
+  opacity: 1;
+  background-image: url('/images/sms.png');
+}
+
+.passwordInput {
+  padding-right: 2.5rem !important;
+  background-image: url('/images/eye.png');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0.6;
+}
+
+.passwordInput:hover {
+  opacity: 1;
+  background-image: url('/images/eye.png');
+}
+
+.inputGroup input:hover {
+  border-color: #000000;
+}
+
+.inputGroup input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.forgotPassword {
+  text-align: right;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+.forgotPassword a {
+  color: #64748B;
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.signinButton {
+  background-color: #6076FF;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+  height: 46px;
+  width: 100%;
+  margin-top: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.signinButton:hover {
+  background-color: #4B5FCC;
+}
+
+.registerLink {
+  text-align: center;
+  color: #001538;
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.registerLink span {
+  font-weight: 400;
+}
+
+.registerLink a {
+  color: #001538;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 0;
+  color: #64748B;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.divider span {
+  margin: 0 1rem;
+  color: #64748B;
+  font-size: 0.875rem;
+}
+
+.socialButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.socialButtons button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 4.5rem;
+  border: 1.5px solid #001538;
+  border-radius: 0.5rem;
+  background-color: white;
+  color: #001538;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.938rem;
+  height: 48px;
+  width: 100%;
+}
+
+.socialButtons button:hover {
+  background-color: #F8FAFC;
+}
+
+.socialButtons button img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 0.5rem;
+}
+
+.socialButtons button img[alt="Apple"] {
+  width: 26px;
+  height: 26px;
+}
+
+.contentSection {
+  flex: 0.5;
+  background-color: #001538;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/images/pattern.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+}
+
+.contentText {
+  max-width: 480px;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.contentText h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  white-space: pre-line;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.contentText h2 span {
+  display: inline-block;
+  font-size: 1.75rem;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.contentText p {
+  font-size: 0.813rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  color: #E2E8F0;
+  opacity: 0.9;
+  max-width: 480px;
+  text-align: left;
+}
+
+.userCount {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatars img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -8px;
+}
+
+.avatars img:first-child {
+  margin-left: 0;
+}
+
+.userCount p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #E2E8F0;
+  opacity: 0.85;
+}
+
+.illustration {
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+  width: 400px;
+  height: auto;
+  z-index: 1;
+}
+
+.iconWrapper {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.iconWrapper:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .formSection,
+  .contentSection {
+    flex: none;
+    width: 100%;
+  }
+
+  .formSection {
+    padding: 2rem;
+  }
+
+  .contentSection {
+    min-height: 600px;
+    padding: 3rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contentText {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .illustration {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    transform: none;
+    width: 100%;
+    max-width: 360px;
+    margin: 2rem auto 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .formSection {
+    padding: 1.5rem;
+  }
+
+  .contentSection {
+    min-height: auto;
+    padding: 2rem 1.5rem;
+  }
+
+  .contentText h2 {
+    font-size: 2rem;
+  }
+
+  .contentText h2 span {
+    font-size: 2rem;
+  }
+} 

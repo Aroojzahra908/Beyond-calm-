@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #0A1B3F;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.brandText {
+  font-size: 3.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+.calmContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoWrapper {
+  margin: 0 -15px;
+  animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+} 
